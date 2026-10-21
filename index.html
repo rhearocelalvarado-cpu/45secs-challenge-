@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Meet Rhea Rocel, a BSIT student who loves learning about technology.">
+
+  <title>Rhea's World | Get to Know Me</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+  <div class="progress-track"><div id="progress"></div></div>
+
+  <header class="topbar">
+
+    <a href="#" class="logo" onclick="showSection('home'); return false;">
+
+      Rhea's <span>World ♡</span>
+
+    </a>
+
+    <div class="top-actions">
+
+      <button class="icon-button" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+
+      <button class="icon-button" id="soundToggle" aria-label="Toggle sound effects">♫</button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+
+    <section class="page-section active" id="home">
+
+      <div class="hero">
+
+        <div class="hero-text">
+
+          <p class="eyebrow">WELCOME TO MY LITTLE CORNER</p>
+
+          <h1>Hi, I'm <span>Rhea Rocel!</span> 🌷</h1>
+
+          <p class="hero-subtitle">A BSIT student, a beginner coder, and a girl who's always curious about learning something new.</p>
+
+          <p class="small-note">Also known as Yang ♡</p>
+
+          <button class="primary-button" onclick="showSection('about')">Get to Know Me →</button>
+
+        </div>
+
+        <div class="portrait-card">
+
+          <div class="portrait-decoration">✦</div>
+
+          <div class="portrait">
+
+            <img src="rhea.jpg" alt="Photo of Rhea Rocel" id="rheaPhoto"
+
+              onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='flex';">
+
+            <div class="photo-fallback" id="photoFallback">
+
+              <span>🌸</span>
+
+              <p>Add your photo</p>
+
+              <small>Save it as rhea.jpg</small>
+
+            </div>
+
+          </div>
+
+          <div class="photo-caption">♡ Just being me</div>
+
+        </div>
+
+      </div>
+
+      <div class="welcome-note">
+
+        <span>✧</span>
+
+        <p>This is my little world. Explore, have fun, and discover a few things about me!</p>
+
+        <span>✧</span>
+
+      </div>
+
+      <div class="section-bottom">
+
+        <p>Curious to know more?</p>
+
+        <button class="text-button" onclick="showSection('about')">Let's explore ↓</button>
+
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="page-section" id="about">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+
+        <h2>Get to know <span>me</span> ♡</h2>
+
+        <p>Here's a little glimpse of who I am.</p>
+
+      </div>
+
+      <div class="about-grid">
+
+        <article class="info-card">
+
+          <span class="card-icon">🎓</span>
+
+          <h3>My Student Life</h3>
+
+          <p>I'm a Bachelor of Science in Information Technology (BSIT) student.</p>
+
+        </article>
+
+        <article class="info-card">
+
+          <span class="card-icon">🌱</span>
+
+          <h3>My Personality</h3>
+
+          <p>I'm shy at first, quiet sometimes, kind, curious, funny when comfortable, and adventurous.</p>
+
+        </article>
+
+        <article class="info-card">
+
+          <span class="card-icon">💻</span>
+
+          <h3>My Current Journey</h3>
+
+          <p>I'm exploring technology, practicing coding, and watching tutorials to understand programming better.</p>
+
+        </article>
+
+        <article class="info-card">
+
+          <span class="card-icon">🎯</span>
+
+          <h3>My Little Goal</h3>
+
+          <p>I want to improve my coding skills and learn more programming languages one step at a time.</p>
+
+        </article>
+
+      </div>
+
+      <div class="hobbies-card">
+
+        <p class="eyebrow">THINGS THAT MAKE ME HAPPY</p>
+
+        <h3>My Hobbies & Interests 🌷</h3>
+
+        <div class="hobby-tags">
+
+          <span>🎬 Filipino Drama Movies</span>
+
+          <span>🎵 OPM Music</span>
+
+          <span>📚 Reading</span>
+
+          <span>💻 Coding Tutorials</span>
+
+          <span>🍳 Cooking</span>
+
+          <span>🎮 Playing Games</span>
+
+          <span>📱 Social Media</span>
+
+          <span>🌱 Learning New Things</span>
+
+          <span>😴 Resting</span>
+
+        </div>
+
+        <button class="secondary-button" id="hobbyReveal">Reveal a Fun Fact ✨</button>
+
+        <p id="hobbyFact" class="hobby-fact hidden" aria-live="polite">
+
+          Honestly, I enjoy watching coding tutorials, but after a while, I end up falling asleep while watching. HAHAHA 😭
+
+        </p>
+
+      </div>
+
+      <div class="favorites">
+
+        <p><strong>Favorite colors:</strong> Purple and pink</p>
+
+        <p><strong>Favorite animal:</strong> Dogs 🐶</p>
+
+        <p><strong>Food preference:</strong> I like vegetables 🥦</p>
+
+        <p><strong>My mindset:</strong> Keep learning, keep trying.</p>
+
+      </div>
+
+      <blockquote class="quote-card">"I may still be learning, but every small step counts." ♡</blockquote>
+
+      <div class="section-bottom">
+
+        <button class="primary-button" onclick="showSection('skills')">See My Skills →</button>
+
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section class="page-section" id="skills">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">MY LEARNING TOOLKIT</p>
+
+        <h2>Skills I'm <span>building</span> 💻</h2>
+
+        <p>I'm still learning, and I'm proud of every step forward.</p>
+
+      </div>
+
+      <div class="skills-grid">
+
+        <article class="skill-card">
+
+          <span class="card-icon">🌐</span>
+
+          <h3>HTML & CSS</h3>
+
+          <p>Basic knowledge of building and styling web pages.</p>
+
+          <span class="skill-level">Beginner</span>
+
+        </article>
+
+        <article class="skill-card">
+
+          <span class="card-icon">⌨️</span>
+
+          <h3>Programming</h3>
+
+          <p>Learning coding logic and practicing programming.</p>
+
+          <span class="skill-level">Still learning</span>
+
+        </article>
+
+        <article class="skill-card">
+
+          <span class="card-icon">📝</span>
+
+          <h3>MS Word</h3>
+
+          <p>Creating and formatting school documents.</p>
+
+          <span class="skill-level">Basic knowledge</span>
+
+        </article>
+
+        <article class="skill-card">
+
+          <span class="card-icon">📊</span>
+
+          <h3>MS PowerPoint</h3>
+
+          <p>Preparing presentations for school activities.</p>
+
+          <span class="skill-level">Basic knowledge</span>
+
+        </article>
+
+        <article class="skill-card">
+
+          <span class="card-icon">🗃️</span>
+
+          <h3>SQL & Databases</h3>
+
+          <p>Learning database concepts and basic SQL queries.</p>
+
+          <span class="skill-level">Basic knowledge</span>
+
+        </article>
+
+        <article class="skill-card">
+
+          <span class="card-icon">🤝</span>
+
+          <h3>Soft Skills</h3>
+
+          <p>Communication, time management, and willingness to learn.</p>
+
+          <span class="skill-level">Growing every day</span>
+
+        </article>
+
+      </div>
+
+      <div class="encouragement">
+
+        <span>🌷</span>
+
+        <div>
+
+          <h3>One step at a time</h3>
+
+          <p>Coding can be challenging, but I keep trying and practicing. I believe improvement comes with patience.</p>
+
+        </div>
+
+      </div>
+
+      <div class="section-bottom">
+
+        <button class="primary-button" onclick="showSection('mood')">Check Your Mood →</button>
+
+      </div>
+
+    </section>
+
+    <!-- MOOD CHECKER -->
+
+    <section class="page-section" id="mood">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">TAKE A LITTLE PAUSE</p>
+
+        <h2>How are you <span>feeling today?</span> 🌷</h2>
+
+        <p>Pick the mood that matches how you feel right now.</p>
+
+      </div>
+
+      <div class="mood-card">
+
+        <div class="mood-options">
+
+          <button class="mood-choice" data-mood="happy">
+
+            <span class="mood-gif happy-emoji">😊</span>
+
+            <span>Happy</span>
+
+          </button>
+
+          <button class="mood-choice" data-mood="calm">
+
+            <span class="mood-gif calm-emoji">😌</span>
+
+            <span>Calm</span>
+
+          </button>
+
+          <button class="mood-choice" data-mood="tired">
+
+            <span class="mood-gif tired-emoji">😴</span>
+
+            <span>Tired</span>
+
+          </button>
+
+          <button class="mood-choice" data-mood="curious">
+
+            <span class="mood-gif curious-emoji">🤔</span>
+
+            <span>Curious</span>
+
+          </button>
+
+          <button class="mood-choice" data-mood="excited">
+
+            <span class="mood-gif excited-emoji">🤩</span>
+
+            <span>Excited</span>
+
+          </button>
+
+        </div>
+
+        <p id="moodMessage" class="mood-message hidden" aria-live="polite"></p>
+
+        <p class="mood-note">Every mood is okay. Take things one step at a time. ♡</p>
+
+      </div>
+
+      <div class="section-bottom">
+
+        <button class="primary-button" onclick="showSection('hci')">Continue to HCI Challenge →</button>
+
+      </div>
+
+    </section>
+
+    <!-- HCI CHALLENGE -->
+
+    <section class="page-section" id="hci">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">THINK LIKE A DESIGNER</p>
+
+        <h2>A tiny <span>HCI challenge</span> 🎨</h2>
+
+        <p>Human-Computer Interaction is about making technology easier and more pleasant for people to use.</p>
+
+      </div>
+
+      <div class="challenge-card">
+
+        <span class="big-emoji">🛍️</span>
+
+        <h3>Which button is easier to understand?</h3>
+
+        <p>Imagine you're shopping online. You want to add an item to your cart. Choose the button that clearly explains what will happen.</p>
+
+        <div class="design-options">
+
+          <button class="design-choice" data-choice="vague">ADD</button>
+
+          <button class="design-choice" data-choice="clear">ADD TO CART</button>
+
+        </div>
+
+        <p id="designFeedback" class="feedback" aria-live="polite"></p>
+
+      </div>
+
+      <div class="principle-card">
+
+        <span>💡</span>
+
+        <div>
+
+          <h3>Why does this matter?</h3>
+
+          <p>Clear labels help users understand an action before clicking. This supports usability and helps reduce confusion.</p>
+
+        </div>
+
+      </div>
+
+      <div class="section-bottom">
+
+        <button class="primary-button" onclick="showSection('quiz')">Take the Fun Quiz →</button>
+
+      </div>
+
+    </section>
+
+    <!-- QUIZ -->
+
+    <section class="page-section" id="quiz">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">LET'S PLAY A LITTLE GAME</p>
+
+        <h2>How well do you <span>know me?</span> 💗</h2>
+
+        <p>Answer these five questions to discover how much you learned.</p>
+
+      </div>
+
+      <div class="quiz-card">
+
+        <div class="quiz-top">
+
+          <span id="questionCounter">Question 1 of 5</span>
+
+          <span id="quizScore">Score: 0</span>
+
+        </div>
+
+        <div class="quiz-progress"><div id="quizProgress"></div></div>
+
+        <h3 id="questionText">Loading question...</h3>
+
+        <div id="answerButtons" class="answer-buttons"></div>
+
+        <p id="quizFeedback" class="feedback" aria-live="polite"></p>
+
+        <div id="quizResult" class="quiz-result hidden">
+
+          <span class="big-emoji">🎉</span>
+
+          <h3 id="resultTitle">Nice job!</h3>
+
+          <p id="resultText"></p>
+
+          <button class="secondary-button" id="playAgain">Play Again ↻</button>
+
+          <button class="primary-button" id="quizContinue">Continue →</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- LETTER -->
+
+    <section class="page-section" id="letter">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">A LITTLE THANK-YOU NOTE</p>
+
+        <h2>A message for <span>Sir Gian</span> 💌</h2>
+
+        <p>Tap the envelope to open the letter.</p>
+
+      </div>
+
+      <div class="letter-area">
+
+        <button id="openLetter" class="envelope" aria-label="Open the letter">
+
+          <span class="envelope-heart">♡</span>
+
+          <span class="envelope-text">For Sir Gian</span>
+
+          <span class="envelope-hint">Tap to open ✨</span>
+
+        </button>
+
+        <article id="letterContent" class="letter-content hidden">
+
+          <p>Dear Sir Gian,</p>
+
+          <p>Welcome to my little corner of the internet! I made this website to share a little about myself and to show what I've been learning about web design and interaction.</p>
+
+          <p>I hope this website is simple to explore, easy to understand, and fun to use. I'm still learning, but I'm doing my best to improve my skills one step at a time.</p>
+
+          <p>Thank you for taking the time to visit my website!</p>
+
+          <p class="letter-signature">Sincerely,<br>Rhea Rocel ♡</p>
+
+        </article>
+
+      </div>
+
+      <div class="section-bottom">
+
+        <button class="primary-button" onclick="showSection('surprise')">One Last Surprise →</button>
+
+      </div>
+
+    </section>
+
+    <!-- SURPRISE AND WEBSITE RATING -->
+
+    <section class="page-section" id="surprise">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">YOU MADE IT THIS FAR!</p>
+
+        <h2>A little <span>surprise</span> for you 🎁</h2>
+
+        <p>You've explored my world. Here's a tiny thank-you!</p>
+
+      </div>
+
+     
+<div class="surprise-card">
+
+  <div class="gift-icon">🎁</div>
+
+  <h3>You've unlocked a little reminder.</h3>
+
+  <p>Learning takes time. Stay curious, keep practicing, and don't be afraid to start small.</p>
+
+  <button id="surpriseButton" class="primary-button">
+    Open Your Surprise ✨
+  </button>
+
+  <div id="surpriseArt" class="surprise-art hidden" aria-hidden="true">
+    <svg class="blue-bouquet" viewBox="0 0 180 150" role="img" aria-label="Blue flower bouquet">
+      <g stroke="#4d9b72" stroke-width="3" fill="none" stroke-linecap="round">
+        <path d="M90 132 L50 48 M90 132 L90 36 M90 132 L130 48 M90 132 L67 67 M90 132 L113 65"/>
+      </g>
+      <g fill="#75baff" stroke="#397fdb" stroke-width="1.5">
+        <g transform="translate(50 40)">
+          <circle cx="0" cy="-10" r="8"/><circle cx="10" cy="-3" r="8"/>
+          <circle cx="6" cy="8" r="8"/><circle cx="-6" cy="8" r="8"/>
+          <circle cx="-10" cy="-3" r="8"/>
+          <circle r="5" fill="#ffe08a" stroke="none"/>
+        </g>
+        <g transform="translate(90 29)">
+          <circle cx="0" cy="-10" r="8"/><circle cx="10" cy="-3" r="8"/>
+          <circle cx="6" cy="8" r="8"/><circle cx="-6" cy="8" r="8"/>
+          <circle cx="-10" cy="-3" r="8"/>
+          <circle r="5" fill="#ffe08a" stroke="none"/>
+        </g>
+        <g transform="translate(130 40)">
+          <circle cx="0" cy="-10" r="8"/><circle cx="10" cy="-3" r="8"/>
+          <circle cx="6" cy="8" r="8"/><circle cx="-6" cy="8" r="8"/>
+          <circle cx="-10" cy="-3" r="8"/>
+          <circle r="5" fill="#ffe08a" stroke="none"/>
+        </g>
+        <g transform="translate(68 62)">
+          <circle cx="0" cy="-8" r="6"/><circle cx="8" cy="0" r="6"/>
+          <circle cx="0" cy="8" r="6"/><circle cx="-8" cy="0" r="6"/>
+          <circle r="4" fill="#ffe08a" stroke="none"/>
+        </g>
+        <g transform="translate(112 62)">
+          <circle cx="0" cy="-8" r="6"/><circle cx="8" cy="0" r="6"/>
+          <circle cx="0" cy="8" r="6"/><circle cx="-8" cy="0" r="6"/>
+          <circle r="4" fill="#ffe08a" stroke="none"/>
+        </g>
+      </g>
+      <path d="M48 78 Q90 103 132 78 L116 132 Q90 145 64 132 Z"
+        fill="#a9d6ff" stroke="#75aee8" stroke-width="2"/>
+      <path d="M48 78 Q90 94 132 78" fill="none" stroke="#75aee8" stroke-width="3"/>
+      <path d="M90 98 L90 125 M90 105 L76 99 M90 113 L104 105"
+        stroke="#4d9b72" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M79 88 Q90 81 101 88 L96 99 Q90 103 84 99 Z"
+        fill="#397fdb"/>
+    </svg>
+
+    <div class="surprise-cat">🐱</div>
+    <p class="surprise-caption">A little gift for you! 💙</p>
+  </div>
+
+  <p id="surpriseMessage" class="surprise-message hidden" aria-live="polite">
+    Thank you for visiting Rhea's World! Keep shining and learning. ♡
+  </p>
+
+</div>
+
+
+      <!-- FEEDBACK -->
+
+      <div class="feedback-card">
+
+        <p class="eyebrow">YOUR THOUGHTS MATTER</p>
+
+        <h3>Rate My Website 💗</h3>
+
+        <p>How was your experience exploring Rhea's World?</p>
+
+        <form id="feedbackForm">
+
+          <label for="websiteRating">Choose a rating from 1 to 5:</label>
+
+          <select id="websiteRating" name="rating" required>
+
+            <option value="">Select your rating</option>
+
+            <option value="1">1 - Needs improvement</option>
+
+            <option value="2">2 - Fair</option>
+
+            <option value="3">3 - Good</option>
+
+            <option value="4">4 - Very good</option>
+
+            <option value="5">5 - Excellent</option>
+
+          </select>
+
+          <button type="submit" class="primary-button">Submit Feedback ♡</button>
+
+        </form>
+
+        <div id="feedbackThanks" class="feedback-thanks hidden" aria-live="polite">
+
+          <span class="big-emoji">💗</span>
+
+          <h3>Thank You for Visiting!</h3>
+
+          <p id="submittedRating"></p>
+
+          <p>Your feedback means a lot to me. Thank you for being part of Rhea's World! 🌷</p>
+
+        </div>
+
+      </div>
+
+      <div class="section-bottom">
+
+        <button class="secondary-button" onclick="restartWebsite()">↻ Explore Again</button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>Made with ♡ by Rhea Rocel | BSIT Student</p>
+
+    <p class="footer-small">A little world of learning, curiosity, and creativity.</p>
+
+    <p class="footer-small">© <span id="year"></span> Rhea's World</p>
+
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div id="celebration" class="celebration" aria-hidden="true"></div>
+
+</body>
+
+</html>
+
